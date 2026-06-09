@@ -1,0 +1,2 @@
+_target_: metrics.fl_simple.FocalLoss_simple
+gamma: ${datasets.criterion.gamma}

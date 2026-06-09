@@ -1,0 +1,8 @@
+model: TARTEWithMLP
+
+args:
+  _target_: models.tarte_mlp.TARTEWithMLP
+  hidden_dim: ${datasets.model_args.tarte_mlp.hidden_dim}
+  num_classes: ${datasets.model_args.tarte_mlp.num_classes}
+  n_layers: ${datasets.model_args.tarte_mlp.n_layers}
+  d_out: ${datasets.model_args.tarte_mlp.d_out}

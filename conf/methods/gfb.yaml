@@ -1,0 +1,27 @@
+optimizers:
+  f: 
+    _target_: torch.optim.Adam
+    _partial_: true
+  g: 
+    _target_: torch.optim.Adam
+    _partial_: true
+optimizer_args:
+  f:
+    lr0: 1e-6
+    lr1: 1e-6
+  g:
+    lr0: 1e-6
+    lr1: 1e-6
+
+epoch: 100
+folder: 
+
+method:
+  type: gfb
+  args:
+    criterion_gen: 
+      _target_: metrics.loss_gen.gen_loss
+      _partial_: true
+    C: 0.875      # Trade-off weight λ between the distance loss and the prediction loss. (L_gen)
+    theta: 0.1    # Weight for the moving average.
+    gamma: 1e-3   # Step size for the auxiliary variable.

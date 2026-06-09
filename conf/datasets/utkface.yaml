@@ -1,0 +1,15 @@
+dataset: utkface
+lr: 1e-4
+batch_size: 128
+
+model_for:
+  gfb: resnet_img
+
+model_args:
+  resnet_img:
+    input_dim: 49152
+    hidden_dim: 128
+    num_classes: 1
+
+criterion:
+  gamma: 2

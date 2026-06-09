@@ -1,0 +1,13 @@
+torch
+torchvision
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.6.1
+scipy==1.14.1
+matplotlib==3.10.0
+tqdm==4.67.1
+h5py
+Pillow==11.1.0
+PyYAML==6.0.2
+hydra-core
+omegaconf

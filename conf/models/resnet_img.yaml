@@ -1,0 +1,7 @@
+model: ResNetWithMLP
+
+args:
+  _target_: models.resnet_img.ResNetWithMLP
+  input_dim: ${datasets.model_args.resnet_img.input_dim}
+  hidden_dim: ${datasets.model_args.resnet_img.hidden_dim}
+  num_classes: ${datasets.model_args.resnet_img.num_classes}

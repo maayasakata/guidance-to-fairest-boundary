@@ -1,0 +1,17 @@
+defaults:
+  - methods: bflt
+  - datasets: celeba
+  - models: resnet_img
+  - criterions: focal_loss
+  - _self_
+  
+seed: 0
+mode: test
+device: "cuda"
+
+hydra:
+  run:
+    dir: .
+  sweep:
+    dir: .
+  output_subdir: null
