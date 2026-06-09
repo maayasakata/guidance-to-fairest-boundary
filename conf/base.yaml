@@ -1,5 +1,5 @@
 defaults:
-  - methods: bflt
+  - methods: gfb
   - datasets: celeba
   - models: resnet_img
   - criterions: focal_loss
