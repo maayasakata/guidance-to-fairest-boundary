@@ -2,7 +2,7 @@
 
 This repository will contain the official implementation of our ICML 2026 paper:
 
-**Fair Machine Learning, Fairness-Accuracy Trade-off, Fair Bayes-optimal Classifier**
+**Fair Classification with Efficient and Post-hoc Controllable Fairness-Accuracy Trade-off**
 
 
 ## Usage Instruction
